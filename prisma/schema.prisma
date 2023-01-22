@@ -11,7 +11,7 @@ datasource db {
 }
 
 model Habit {
-  id        String   @id @default(uuid())
+  id        String   @id @default(cuid())
   title     String
   createdAt DateTime @default(now()) @map("created_at")
 
